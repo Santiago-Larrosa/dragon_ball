@@ -8,15 +8,18 @@ import "./index.css";
 //import Games from"./games"
 //import Movies from"./movies"
 //import Series from"./series"
-import Characters from"./characters"
+//import Characters from"./characters"
 import Root from "./root";
+import Imagen1 from "./fondo_1.png"
+import Imagen2 from "./fondo_2.png"
+const images = [Imagen1,Imagen2]
 
 const router = createBrowserRouter ([
 {
   path: "" ,
-  element: <Root/>,
+  element: <Root images={images}/>,
 },
-{
+/*{
   path: "/games",
   element: <Games/>
 },
@@ -31,7 +34,7 @@ const router = createBrowserRouter ([
 {
   path: "/characters",
   element: <Characters/>
-},
+},*/
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -39,3 +42,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <RouterProvider router={router} />
   </React.StrictMode>,
 )
+
