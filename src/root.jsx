@@ -29,23 +29,27 @@ const series = [
 
 const Rotar = ({ serie }) => {
   const [isFlipped, setIsFlipped] = useState(false);
+  const [distinct, setDistinct] = useState('');
 
   const handleFlip = () => {
     setIsFlipped(!isFlipped);
   };
+ 
 
   return (
     <div className={`flip-container ${isFlipped ? "flipped" : ""}`} onClick={handleFlip}>
+      {}
       <div className="flipper">
         <div className="front">
-          <div className="frente" style={{left:`${100+parseInt(serie.id-1)*600}px`, position:"absolute", top:`${0-(((parseInt(serie.id)-1)-((parseInt(serie.id)+1)-1)*100))}px`}}>
+          <div className="frente" style={{left:`${100+parseInt(serie.id-1)*600}px`, position:"absolute", boxShadow:"10px 10px 10px gray", height:"600px", borderRadius:"20px"}}>
             <img src={serie.image_front} style={{ width: "500px" }} alt="Dragon Ball" />
             <h1>{serie.name}</h1>
             <h3>{serie.year}</h3>
+            <a style={{color:"white"}}><button style={{backgroundColor:"orange"}}>Ver más</button></a>
           </div>
         </div>
         <div className="back" >
-          <div className="atras" style={{left:`${100+parseInt(serie.id-1)*600}px`, position:"absolute", top:`${0-(((parseInt(serie.id)-1)-((parseInt(serie.id)+1)-1)*100))}px`}} >
+          <div className="atras" style={{left:`${100+parseInt(serie.id-1)*600}px`, position:"absolute", height:"800px"}} >
             <img src={serie.image_back} style={{ width: "500px" }} alt="Dragon Ball" />
             <h3>{serie.resume}</h3>
           </div>
@@ -92,14 +96,19 @@ const Root = ({ images }) => {
       <h1 style={{ color: "black", position: "absolute", top: "80%", left: "100px" }}>Series</h1>
       <div className="Hola">
         {series.map((serie, index1) => (
-          <div key={index1} style={{ marginRight: `${parseInt(index1)*100}px` }}>
+          <div key={index1} style={{ position: "absolute", top: "300px", left: `${parseInt(index1) * 100}px` }}>
             <Rotar serie={serie} />
+
           </div>
+  
         ))}
+        
+      </div>
+      <div style={{width:"25%"}}>
+      <a style={{color:"white", position:"absolute", top:"1300px", left:"25%", width:"50%"}}><button style={{backgroundColor:"orange", width:"100%"}}>Ver más series</button></a> 
       </div>
     </>
   );
 };
 
 export default Root;
-
