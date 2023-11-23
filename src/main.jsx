@@ -7,7 +7,8 @@ import {
 import "./index.css";
 //import Games from"./games"
 //import Movies from"./movies"
-//import Series from"./series"
+import Series from"./series"
+import SeriesList from "./seriesList"
 //import Characters from"./characters"
 import Root from "./root";
 import Imagen1 from "./fondo_1.png"
@@ -19,6 +20,10 @@ const router = createBrowserRouter ([
   path: "" ,
   element: <Root images={images}/>,
 },
+{
+path:"/serieslist",
+element: <SeriesList/>,
+},
 /*{
   path: "/games",
   element: <Games/>
@@ -26,11 +31,12 @@ const router = createBrowserRouter ([
 {
   path: "/movies",
   element: <Movies/>
-},
+},*/
 {
-  path: "/series",
+  path: "/series/:id",
   element: <Series/>
 },
+/*
 {
   path: "/characters",
   element: <Characters/>
