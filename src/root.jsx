@@ -103,7 +103,7 @@ const Root = ({ images }) => {
           &#9655;
         </div>
       </div>
-      <h1 style={{ color: "black", position: "absolute", top: "80%", left: "100px" }}>Series</h1>
+      <h1 className="serie" >Series</h1>
       <div className="Hola">
       {series.slice(0, window.innerWidth >= 1200 ? 2 : 1).map((serie, index1) => (
   <div key={index1} style={{ position: "absolute", top: "60%", left: `${index1 * (window.innerWidth >= 600 ? 100 : 0)}px`, marginLeft:`${window.innerWidth >= 600 ? 0 : -150}px`, marginRight:`${window.innerWidth >= 600 ? 0 : 200}px` }}>
@@ -114,7 +114,7 @@ const Root = ({ images }) => {
 
       </div>
       <div style={{ width: "25%" }}>
-        <a href={'/seriesList'} style={{ color: "white", position: "absolute", top: "1300px", left: "25%", width: "50%", marginTop:"50px" }}><button style={{ backgroundColor: "orange", width: "100%" }}>Ver más series</button></a>
+        <a href={'/seriesList'} style={{ color: "white", position: "absolute",fontSize:`${window.innerWidth >= 600 ? 1 : 4}vw`, top: `${window.innerWidth >= 600 ? 210 : 180}%`, left: "25%", width: "50%", marginTop:"50px" }}><button style={{ backgroundColor: "orange", width: "100%", height:"10%" }}>Ver más series</button></a>
       </div>
     </>
   );
