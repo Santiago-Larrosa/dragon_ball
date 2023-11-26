@@ -5,6 +5,7 @@
   height: 50px;
   position: relative;
   cursor: pointer;
+  overflow-wrap: break-word;
 }
 
 .flip-containero .flippero {
