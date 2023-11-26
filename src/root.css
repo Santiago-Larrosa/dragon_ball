@@ -129,6 +129,8 @@ body {
     transform: rotateY(180deg);
   }
   
+
+
   .flip-container .front,
   .flip-container .back {
   
@@ -171,3 +173,15 @@ body {
   .Hola {
     height: 800px; /* Ajusta este valor según sea necesario */
   }
+.Peliculas {
+color: black;
+position: absolute;
+top:230%;
+left:10%;
+@media only screen and (max-width: 600px) {
+  top:210%;
+  margin:0 auto;
+      display: flex;
+      flex: content;
+}
+}
