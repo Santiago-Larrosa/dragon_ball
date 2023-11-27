@@ -349,7 +349,7 @@ const Root = ({ images }) => {
 
 ))}
 <div style={{ width: "25%" }}>
-        <a href={'/moviesList'} style={{ color: "white", position: "absolute",fontSize:`${window.innerWidth >= 600 ? 1 : 4}vw`, top: `${window.innerWidth >= 600 ? 540 : 500}%`, left: "25%", width: "50%", marginTop:"50px" }}><button style={{ backgroundColor: "orange", width: "100%", height:"10%" }}>Ver más personajes</button></a>
+        <a href={'/charlist'} style={{ color: "white", position: "absolute",fontSize:`${window.innerWidth >= 600 ? 1 : 4}vw`, top: `${window.innerWidth >= 600 ? 540 : 500}%`, left: "25%", width: "50%", marginTop:"50px" }}><button style={{ backgroundColor: "orange", width: "100%", height:"10%" }}>Ver más personajes</button></a>
       </div>
     </>
   );
