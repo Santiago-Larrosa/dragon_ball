@@ -111,7 +111,7 @@ body {
     cursor: pointer;
     margin-left: -100px;
     @media only screen and (max-width: 600px) {
-      width:450px;
+      width:500px;
       margin-top:280px;
       margin-left: -20px;
     }
@@ -180,6 +180,79 @@ top:230%;
 left:10%;
 @media only screen and (max-width: 600px) {
   top:210%;
+  margin:0 auto;
+      display: flex;
+      flex: content;
+}
+}
+.instagram {
+  position: absolute;
+  top:10px;
+  left:70%;
+  width: 5%;
+  margin:20px;
+}
+.twitter {
+  position: absolute;
+  top:10px;
+  left:77%;
+  width: 5%;
+  margin:20px;
+}
+.youtube {
+  position: absolute;
+  top:10px;
+  left:84%;
+  width: 5%;
+  margin:20px;
+}
+.mas {
+  width:10%;
+  border-radius: 50%;
+}
+.ahh {
+  position:absolute;
+  top:140%;
+  left:48%;
+  height: 15%;
+  
+  @media only screen and (max-width: 600px) {
+    width:200%;
+   left:40%;
+  }
+
+}
+.irBlog {
+  color:black;
+  background-color:orange;
+  left:70%;
+  top:90%;
+  box-shadow: 5px 5px 5px rgb(180, 180, 180);
+  width:20%;
+  border-radius:10px;
+  position: absolute;
+  @media only screen and (max-width: 600px) {
+    top:52%;
+   
+    left:25%;
+    width:50%;
+    display: flex;
+      flex: content;
+      margin:0 auto;
+  }
+}
+.BlogB {
+  width:100%;
+  background-color: orange;
+  font-size: 20px;
+}
+.Personajes {
+  color: black;
+position: absolute;
+top:380%;
+left:10%;
+@media only screen and (max-width: 600px) {
+  top:360%;
   margin:0 auto;
       display: flex;
       flex: content;
