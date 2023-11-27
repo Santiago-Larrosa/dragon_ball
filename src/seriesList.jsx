@@ -12,6 +12,9 @@ import GTL from "./GTL.png"
 import DBSL from "./DBSL.png"
 import DBHL from "./DBHL.png"
 import DBDL from "./DBDL.png"
+import T from "./twitter.png"
+import Y from "./youtube.png"
+import I from "./instagram1.png"
 import "./seriesList.css";
 
 const SeriesList = () => {
@@ -110,6 +113,12 @@ const SeriesList = () => {
         <h1 className="dragon">
           <b>Dragon Ball WIKI</b>
         </h1>
+        <a href="https://www.instagram.com/dragonballsuper/?hl=es" target="_blank">
+        <img src={I} className="instagram" ></img></a>
+        <a href="https://twitter.com/DB_official_en?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+          <img src={T} className="twitter"></img></a>
+        <a href="https://www.youtube.com/@ToeiAnimationjp" target="_blank">
+          <img src={Y} className="youtube"></img></a>
       </header>
       <div className="Hola">
         {series.map((serie, index) => (
